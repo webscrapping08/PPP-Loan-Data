@@ -42,7 +42,7 @@ jj = pd.read_csv('jen.csv')
 
 st.write(jj)
 lenn = len(jj)
-st.write(f'total{lenn}')
+st.write(f'total: {lenn}')
 
   
     
