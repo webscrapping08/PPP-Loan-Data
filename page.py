@@ -10,7 +10,7 @@ st.set_page_config(page_title="Onlone jobe.ph",page_icon=":tada:",layout="wide")
 st.title (':tada: Searchable PPP Loan Data :tada:')
 
 st.write('Please wait for the data . it will reload 50 Because the site . is no pagenation and randomly give data . pleasee see on site https://pppreport.org/ ')
-url= 'https://pppreport.org/'
+url= 'https://pppreport.org/advanced.php?business=&address=&city=&state=selected&zip=&naics=selected&naicscode=&businesstype=selected&race=selected&gender=selected&veteran=selected&nonprofit=selected&jobs=selected&cd=selected&loanamt=selected'
 
 s =HTMLSession()
 r=s.get(url)
