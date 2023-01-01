@@ -53,12 +53,14 @@ def convert_df(df):
 csv = convert_df(jj)
 
 st.download_button(
-    label="Download data as Csv :tada:",
+    label="Download data as Csv",
     data=csv,
     file_name='Result.csv',
     mime='text/csv',
 )
-  
+
+
+st.write('Create by Allan Paul Dela Cruz')
     
 
         
