@@ -41,7 +41,8 @@ with open('jen.csv','w',encoding='utf8',newline='') as f:
 jj = pd.read_csv('jen.csv')
 
 st.write(jj)
-st.write(len(jj))
+lenn = len(jj)
+st.write(f'total{lenn}')
 
   
     
