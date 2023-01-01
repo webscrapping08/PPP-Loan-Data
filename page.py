@@ -45,9 +45,16 @@ jj = pd.read_csv('jen.csv')
 st.dataframe(jj)
 lenn = len(jj)
 st.write(f'total: {lenn}')
+
+def convert_df(df):
+    # IMPORTANT: Cache the conversion to prevent computation on every rerun
+    return df.to_csv(index=False).encode('utf-8')
+
+csv = convert_df(jj)
+
 st.download_button(
-    label="Download data as Csv",
-    data=jj,
+    label="Download data as Csv :tada:",
+    data=csv,
     file_name='Result.csv',
     mime='text/csv',
 )
